@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { motion, useMotionValue, useSpring, useTransform } from 'motion/react'
+import { motion, useSpring, useTransform } from 'motion/react'
 import './card.css'
 
 function Card() {
@@ -47,12 +47,12 @@ function Card() {
 
     }
 
-    function handleMouseEnter(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
+    function handleMouseEnter() {
         scale.set(cardScale);
         setIsHovering(true);
     }
 
-    function handleMouseLeave(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
+    function handleMouseLeave() {
         scale.set(1);
         xPos.set(0);
         yPos.set(0);
