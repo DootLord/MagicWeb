@@ -1,0 +1,7 @@
+.card {
+    width: 12vw;
+}
+
+.card img {
+    width: inherit;
+}
